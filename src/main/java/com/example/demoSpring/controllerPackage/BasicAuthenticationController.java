@@ -7,22 +7,10 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class BasicAuthenticationController {
 
-//    @RequestMapping
-//    public String helloWorld(){
-//        return "Hello World";
-//    }
+
 
     @RequestMapping(value = "/basicauth", method = RequestMethod.GET)
     public AuthenticationBean helloWorldBean(){
-
-        return new AuthenticationBean("You have been authenticated");
+        return new AuthenticationBean("You are authenticated");
     }
-
-//    @RequestMapping(value = "/hello-person/path-variable/{name}", method = RequestMethod.GET)
-//    public AuthenticationBean helloWorldPathVariable(@PathVariable String name){
-//        //use the name argument
-//        return new AuthenticationBean(String.format("Hello World, %s", name));
-//    }
-
-
 }
